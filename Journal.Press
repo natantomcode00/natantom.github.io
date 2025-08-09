@@ -1,0 +1,36 @@
+title: "JournalPress"
+description: "A collaborative journalism site powered by GitHub Pages and Jekyll."
+theme: minima
+plugins:
+  - jekyll-feed
+---
+layout: home
+title: "Home"
+---
+# Welcome to JournalPress!
+
+Collaborate. Report. Empower.
+
+Mag-submit ng balita, opinyon, at kwento. Lahat ay welcome!
+---
+layout: page
+title: "About"
+---
+## About JournalPress
+
+**JournalPress** is a collaborative journalism project.  
+Anyone can contribute news, opinions, and stories by submitting a pull request.  
+Editors review and publish stories—just like an open newsroom!
+---
+title: "Welcome to JournalPress!"
+date: 2025-08-09
+author: "Site Admin"
+---
+Ito ang unang article ng JournalPress!  
+Mag-submit ng sarili mong kwento gamit ang **pull request** o mag-suggest ng topic gamit ang [GitHub Issues](../../issues).
+
+**Sumali sa kwentuhan!**
+_site/
+.sass-cache/
+.jekyll-metadata
+# Add your images, CSS, or other assets to this folder.
