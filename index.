@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collaborative Journalism Hub</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        color: #333;
+        overflow-x: hidden;
+    }
+    header {
+        background: linear-gradient(135deg, #004aad, #007bff);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        animation: fadeInDown 1s ease-in-out;
+    }
+    nav {
+        background: #003580;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    nav a:hover {
+        color: #ffd700;
+    }
+    section {
+        display: none;
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+    section.active {
+        display: block;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #004aad;
+        color: white;
+        margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Collaborative Journalism Hub</h1>
+    <p>Connecting student journalists to share stories and insights</p>
+</header>
+
+<nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<section id="home" class="active">
+    <h2>Welcome</h2>
+    <p>Our hub is built for student journalists to collaborate, share ideas, and publish stories together. Whether you're a writer, photographer, or editor, you have a voice here.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a community-driven platform connecting student journalists across schools. Our mission is to empower young voices through collaborative storytelling.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:collabjournal@example.com">collabjournal@example.com</a> for submissions and inquiries.</p>
+</section>
+
+<footer>
+    &copy; 2025 Collaborative Journalism Hub — Built by students, for students.
+</footer>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
